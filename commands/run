@@ -9,6 +9,15 @@ dir_share=$(grep DIR_SHARE .env | cut -d '=' -f2)
 dir_apache=$(grep DIR_APACHE .env | cut -d '=' -f2)
 dir_templates=$(grep DIR_TEMPLATES .env | cut -d '=' -f2)
 
+# CREATE FOLDERS IF NOT EXISTS
+if [ ! -d $dir_share ]; then
+  mkdir $dir_share
+fi
+
+if [ ! -d $dir_apache ]; then
+  mkdir $dir_apache
+fi
+
 # COPY TEMPLATE
 cp $dir_templates/template_index temp
 
