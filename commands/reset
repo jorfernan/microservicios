@@ -10,7 +10,7 @@ php_service=$(grep PHP_SERVICE .env | cut -d '=' -f2)
 db_version=$(grep VERSION_MYSQL .env | cut -d '=' -f2)
 web_service=$(grep WEB_SERVICE .env | cut -d '=' -f2)
 dir_src=$(grep DIR_SRC .env | cut -d '=' -f2)
-vol_db=$(grep VOL_DB .env | cut -d '=' -f2)
+dir_db=$(grep DIR_DB .env | cut -d '=' -f2)
 
 docker rmi microservicios-$php_service microservicios-$web_service mysql:$db_version
 
@@ -19,7 +19,7 @@ then
   rm -rf $dir_src
 fi
 
-if [ -d $vol_db ];
+if [ -d $dir_db ];
 then
-  rm -rf $vol_db
+  rm -rf $dir_db
 fi
