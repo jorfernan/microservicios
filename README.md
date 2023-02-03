@@ -13,7 +13,7 @@ La práctica consistia en la creación de un docker-compose donde se parametriza
 # Requisitos
 docker: https://docs.docker.com/engine/install/
 
-docker-compose: https://docs.docker.com/compose/install/linux/
+docker-compose: https://docs.docker.com/compose/install/
 
 bash
 
