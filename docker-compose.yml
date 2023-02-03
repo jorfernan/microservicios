@@ -1,0 +1,35 @@
+services:
+  db:
+    container_name: ${DB_SERVICE}
+    image: mysql:${VERSION_MYSQL}
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWD}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASSWD}
+      - MYSQL_DATABASE=${DB_NAME}
+    depends_on:
+      - apache
+  apache:
+    container_name: ${WEB_SERVICE}
+    build: 
+      context: ${DIR_APACHE}
+      args:
+        VERSION_APACHE: ${VERSION_APACHE}  
+    depends_on:
+      - php
+    volumes:
+      - ${DIR_SHARE}:/usr/local/apache2/htdocs/
+    ports:
+     - 8080:80
+  php:
+    container_name: ${PHP_SERVICE}
+    build: 
+      context: ${DIR_PHP}
+      args:
+        VERSION_PHP_FPM: ${VERSION_PHP_FPM} 
+    volumes:
+     - ${DIR_SHARE}:/var/www/html
+volumes:
+  db_data:

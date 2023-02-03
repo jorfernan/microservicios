@@ -1,0 +1,17 @@
+ARG VERSION_APACHE
+#Apache httpd con la versión indicada en el archivo .env
+FROM httpd:${VERSION_APACHE}
+
+# Habilitación de modulos
+RUN sed -i \
+        -e 's/^#\(LoadModule .*mod_deflate.so\)/\1/' \
+        -e 's/^#\(LoadModule .*mod_proxy.so\)/\1/' \
+        -e 's/^#\(LoadModule .*mod_proxy_fcgi.so\)/\1/' \
+        conf/httpd.conf
+
+# Especificación del la ruta del proxy a cambiar
+RUN echo 'ProxyPassMatch ^/(.*\.php(/.*)?)$ fcgi://PHP_SERVICE:9000/var/www/html/$1' \
+    >> conf/httpd.conf
+
+# Cambiar DirectoryIndex a index.html a index.php
+RUN sed -i "s/DirectoryIndex index.html/DirectoryIndex index.php/" /usr/local/apache2/conf/httpd.conf
