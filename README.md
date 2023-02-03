@@ -1,11 +1,14 @@
+# GIT CLONE && cd microservicios
+git clone https://github.com:jorfernan/microservicios.git && cd microservicios
+
+#Crear
+./commands/create
+
 # Borrar todo
-./0-reset
+./commands/reset
 
 # Ejecución
-./0-run
+./commands/run
 
-# Borrar y ejecutar
-./0-create
-
-# Cambio de parámetros
+#Cambio de parámetros
 sudo nano .env
