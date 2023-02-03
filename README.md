@@ -1,7 +1,8 @@
-# GIT CLONE && cd microservicios
+# Descarga
 git clone https://github.com:jorfernan/microservicios.git && cd microservicios
 
-#Crear
+# Crear
+Borra los contenedores e imágenes anteriores (./reset && ./run)
 ./commands/create
 
 # Borrar todo
@@ -10,5 +11,5 @@ git clone https://github.com:jorfernan/microservicios.git && cd microservicios
 # Ejecución
 ./commands/run
 
-#Cambio de parámetros
+# Cambio de parámetros
 sudo nano .env
