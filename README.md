@@ -19,7 +19,7 @@ bash
 git clone https://github.com/jorfernan/microservicios.git && cd microservicios
 
 # Crear
-Borra los contenedores e imágenes anteriores (./reset && ./run)
+Borra los contenedores e imágenes anteriores y crea los servicios (./reset && ./run)
 ./commands/create
 
 # Borrar todo
