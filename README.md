@@ -1,3 +1,14 @@
+# Descripción
+
+Práctica de puesta en producción segura donde se crean tres servicios enlazados entre si. Un servidor apache, un intérprete de PHP y una base de datos MySQL.
+
+- El usuario, contraseña y la base de datos a crear se pueden modificar en el archivo .env
+- Se requiere una modificación adicional para cambiar los directorios del archivo .env
+- Los nombres de los servicios pueden cambiarse al gusto en el archivo .env
+- Las versiones tambien pueden cambiarse a voluntad.
+
+La práctica consistia en la creación de un docker-compose donde se parametrizaran las versiones de las imágenes tomadas para la cosntrucción de los contenedores.
+
 # Requisitos
 docker
 docker-compose
