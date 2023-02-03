@@ -1,3 +1,8 @@
+# Requisitos
+docker
+docker-compose
+bash
+
 # Descarga
 git clone https://github.com:jorfernan/microservicios.git && cd microservicios
 
