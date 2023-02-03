@@ -11,8 +11,10 @@ Práctica de puesta en producción segura donde se crean tres servicios enlazado
 La práctica consistia en la creación de un docker-compose donde se parametrizaran las versiones de las imágenes tomadas para la construcción de los contenedores.
 
 # Requisitos
-docker
-docker-compose
+docker: https://docs.docker.com/engine/install/
+
+docker-compose: https://docs.docker.com/compose/install/linux/
+
 bash
 
 # Descarga
