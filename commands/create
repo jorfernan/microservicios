@@ -1,3 +1,2 @@
 #!/bin/bash
-./commands/reset
-./commands/run
+./commands/reset && ./commands/run

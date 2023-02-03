@@ -23,13 +23,13 @@ bash
 # Crear
 Borra los contenedores e imágenes anteriores y crea los servicios (./reset && ./run)
 
-##    ./commands/create
+##  sudo ./commands/create
 
-# Borrar todo
-##    ./commands/reset
+# Borrar todo CONTENEDORES, IMAGENES Y VOLÚMENES
+##  sudo ./commands/reset
 
 # Ejecución
-##    ./commands/run
+##  ./commands/run
 
 # Modificación
 ##    Modificar el archivo **.env**

@@ -3,7 +3,7 @@ services:
     container_name: ${DB_SERVICE}
     image: mysql:${VERSION_MYSQL}
     volumes:
-      - db_data:/var/lib/mysql
+      - ${VOL_DB}:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWD}
       - MYSQL_USER=${DB_USER}
@@ -31,5 +31,4 @@ services:
         VERSION_PHP_FPM: ${VERSION_PHP_FPM} 
     volumes:
      - ${DIR_SHARE}:/var/www/html
-volumes:
-  db_data:
+

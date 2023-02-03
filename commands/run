@@ -9,6 +9,7 @@ dir_share=$(grep DIR_SHARE .env | cut -d '=' -f2)
 dir_apache=$(grep DIR_APACHE .env | cut -d '=' -f2)
 dir_php=$(grep DIR_PHP .env | cut -d '=' -f2)
 dir_templates=$(grep DIR_TEMPLATES .env | cut -d '=' -f2)
+vol_db=$(grep VOL_DB .env | cut -d '=' -f2)
 
 # CREATE FOLDERS IF NOT EXISTS
 if [ ! -d $dir_share ]; then
@@ -21,6 +22,10 @@ fi
 
 if [ ! -d $dir_php ]; then
   mkdir -p $dir_php
+fi
+
+if [ ! -d $vol_db ]; then
+  mkdir -p $vol_db
 fi
 
 # COPY TEMPLATE WEBPAGE
