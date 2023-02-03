@@ -19,7 +19,7 @@ if [ ! -d $dir_apache ]; then
   mkdir -p $dir_apache
 fi
 
-if [ ! -d $dir_ph ]; then
+if [ ! -d $dir_php ]; then
   mkdir -p $dir_php
 fi
 
