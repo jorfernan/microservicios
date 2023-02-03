@@ -8,7 +8,7 @@ Práctica de puesta en producción segura donde se crean tres servicios enlazado
 - Las versiones tambien pueden cambiarse a voluntad
 - El puerto de enlace entre el host y el contenedor tambien puede modificarse
 
-La práctica consistia en la creación de un docker-compose donde se parametrizaran las versiones de las imágenes tomadas para la cosntrucción de los contenedores.
+La práctica consistia en la creación de un docker-compose donde se parametrizaran las versiones de las imágenes tomadas para la construcción de los contenedores.
 
 # Requisitos
 docker
