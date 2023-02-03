@@ -13,5 +13,5 @@ RUN sed -i \
 RUN echo 'ProxyPassMatch ^/(.*\.php(/.*)?)$ fcgi://PHP_SERVICE:9000/var/www/html/$1' \
     >> conf/httpd.conf
 
-# Cambiar DirectoryIndex a index.html a index.php
+# Cambiar el valor de DirectoryIndex de index.html a index.php
 RUN sed -i "s/DirectoryIndex index.html/DirectoryIndex index.php/" /usr/local/apache2/conf/httpd.conf
