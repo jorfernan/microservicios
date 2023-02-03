@@ -16,7 +16,7 @@ docker-compose
 bash
 
 # Descarga
-git clone https://github.com:jorfernan/microservicios.git && cd microservicios
+git clone https://github.com/jorfernan/microservicios.git && cd microservicios
 
 # Crear
 Borra los contenedores e imágenes anteriores (./reset && ./run)
