@@ -1,7 +1,6 @@
 #!/bin/bash
-
+# TTHE FILE MUST BE RUN FROM 'microservicios' FOLDER
 current_dir=$(basename $(pwd))
-
 if [ $current_dir != "microservicios" ]; then
   echo ""
   echo -e "\033[31mError!\033[0m: This script must be run in the \033[33m'microservicios'\033[0m directory!"
