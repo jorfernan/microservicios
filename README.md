@@ -19,7 +19,7 @@ La práctica consistia en la creación de un docker-compose donde se parametriza
 <img src="https://www.clipartmax.com/png/middle/341-3413211_compose-docker-compose.png" width=100 height=100>
 <a href="https://docs.docker.com/compose/install/">Docker Compose</a>
 
-<a href="https://w7.pngwing.com/pngs/273/225/png-transparent-bash-shell-script-gnu-bourne-shell-shell.png" width=100 height=100>Bash</a>
+<a href="https://img2.freepng.es/20180429/lhq/kisspng-bash-shell-script-linux-scripting-language-5ae586d96ab3c7.0595954015249917054371.jpg" width=100 height=100>Bash</a>
 
 # Descarga
 ###    git clone https://github.com/jorfernan/microservicios.git && cd microservicios
