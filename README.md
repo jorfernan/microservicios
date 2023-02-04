@@ -1,4 +1,4 @@
-# Descripción
+# <center>Descripción</center>
 
 Práctica de puesta en producción segura donde se crean tres servicios enlazados entre si. Un servidor apache, un intérprete de PHP y una base de datos MySQL.
 
