@@ -1,4 +1,5 @@
 <h1 align="center">Docker Compose: Práctica de MySQL, PHP y Apache</h1>
+
 # Descripción
 
 Práctica de puesta en producción segura donde se crean tres servicios enlazados entre si. Un servidor apache, un intérprete de PHP y una base de datos MySQL.
