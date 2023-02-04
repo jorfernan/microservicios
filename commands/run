@@ -45,7 +45,7 @@ cp $dir_templates/template_php $dir_php/Dockerfile
 # COPIES THE WEB TEMPLATE INTO A TEMP FILE
 cp $dir_templates/template_index temp
 
-# REPLACE THE KEY VALUES IN TEMP FILE WITH THOSE IN THE .env FILE
+# REPLACES THE KEY VALUES IN TEMP FILE WITH THOSE IN THE .env FILE
 sed -i "s/DB_PASSWD/$db_passwd/g" temp
 sed -i "s/DB_SERVICE/$db_service/g" temp
 sed -i "s/DB_USER/$db_user/g" temp
