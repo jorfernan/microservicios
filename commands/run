@@ -1,4 +1,16 @@
 #!/bin/bash
+
+current_dir=$(basename $(pwd))
+
+if [ $current_dir != "microservicios" ]; then
+  echo ""
+  echo -e "\033[31mError!\033[0m: This script must be run in the \033[33m'microservicios'\033[0m directory!"
+  echo ""
+  echo -e "Like this: \033[1m./commands/run\033[0m or \033[1msudo ./commands/create\033[0m"
+  echo ""
+  exit 1
+fi
+
 # VARIABLES
 db_passwd=$(grep DB_PASSWD .env | cut -d '=' -f2)
 db_service=$(grep DB_SERVICE .env | cut -d '=' -f2)
