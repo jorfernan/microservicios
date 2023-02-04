@@ -36,4 +36,4 @@ Borra los directorios src y db, para y elimina los contenedores y borra las imá
 Crea los directorios src y db y los Dockerfiles de los servicios php y apache según los parámetros del archivo **.env** para finalmente ejecutar el comando docker compose up
 
 # Modificación
-##    Modificar el archivo **.env**
+Modificar el archivo **.env**
