@@ -56,7 +56,7 @@ mv temp  $dir_share/index.php
 
 # COPIES THE APACHE TEMPLATE INTO A TEMP FILE
 cp $dir_templates/template_apache temp
-# REPLACES THE KEY VALUE (URL OF PHP SERVICE) IN TEMP FILE WITH THE ONE IN THE .env FILE
+# REPLACES THE KEY VALUE (NAME OF THE PHP SERVICE) IN THE URL OF THE TEMP FILE WITH THE ONE IN THE .env FILE
 sed -i "s/PHP_SERVICE/$php_service/g" temp
 # SENDS TEMP FILE AS Dockerfile TO ITS LOCATION
 mv temp  $dir_apache/Dockerfile
