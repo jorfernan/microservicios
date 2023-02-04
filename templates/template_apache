@@ -2,7 +2,7 @@ ARG VERSION_APACHE
 #Apache httpd con la versión indicada en el archivo .env
 FROM httpd:${VERSION_APACHE}
 
-# Habilitación de modulos
+# Habilitación de módulos
 RUN sed -i \
         -e 's/^#\(LoadModule .*mod_deflate.so\)/\1/' \
         -e 's/^#\(LoadModule .*mod_proxy.so\)/\1/' \
