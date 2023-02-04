@@ -3,7 +3,7 @@
 current_dir=$(basename $(pwd))
 if [ $current_dir != "microservicios" ]; then
   echo ""
-  echo -e "\033[31mError!\033[0m: This script must be run in the \033[33m'microservicios'\033[0m directory!"
+  echo -e "\033[31mError!\033[0m: This script must be run inside the \033[33m'microservicios'\033[0m directory!"
   echo ""
   echo -e "Like this: \033[1m./commands/run\033[0m or \033[1msudo ./commands/create\033[0m"
   echo ""
