@@ -1,5 +1,5 @@
 #!/bin/bash
-# THE FILE MUST BE RUN FROM 'microservicios' FOLDER
+# THE FILE MUST BE RUN FROM THE 'microservicios' FOLDER
 current_dir=$(basename $(pwd))
 if [ $current_dir != "microservicios" ]; then
   echo ""
