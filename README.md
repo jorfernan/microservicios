@@ -13,11 +13,11 @@ Práctica de puesta en producción segura donde se crean tres servicios enlazado
 La práctica consistia en la creación de un docker-compose donde se parametrizaran las versiones de las imágenes tomadas para la construcción de los contenedores.
 
 # Requisitos
-docker: https://docs.docker.com/engine/install/
+<a href="https://docs.docker.com/engine/install/">Docker</a>
 
-docker-compose: https://docs.docker.com/compose/install/
+<a href="https://docs.docker.com/compose/install/">Docker Compose</a>
 
-bash
+<a href="https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html">Bash</a>
 
 # Descarga
 ###    git clone https://github.com/jorfernan/microservicios.git && cd microservicios
