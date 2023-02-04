@@ -1,2 +1,2 @@
 #!/bin/bash
-./commands/reset && ./commands/run
+./commands/reset.sh && ./commands/run.sh
