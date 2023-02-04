@@ -27,7 +27,7 @@ Borra los contenedores e imágenes anteriores y crea los servicios (./reset && .
 
 ##  sudo ./commands/create
 
-# Borrar todo [ contendores, imágenes y volúmenes ]
+# Borrar todo [ contenedores, imágenes y volúmenes ]
 Borra los directorios src y db, para y elimina los contenedores y borra las imágenes de los mismos
 ##  sudo ./commands/reset
 
