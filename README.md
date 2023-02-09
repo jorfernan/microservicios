@@ -6,7 +6,7 @@ Práctica de puesta en producción segura donde se crean tres servicios enlazado
 
 - El usuario, contraseña y la base de datos a crear se pueden modificar en el archivo .env
 - Se requiere una modificación adicional para cambiar los directorios del archivo .env
-- Los nombres de los servicios pueden cambiarse al gusto en el archivo .env
+- Los nombres de los contenedores pueden son modificables desde el archivo .env
 - Las versiones tambien pueden cambiarse a voluntad
 - El puerto de enlace del host al contenedor tambien puede modificarse
 
